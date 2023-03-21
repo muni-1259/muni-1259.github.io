@@ -6,15 +6,30 @@
   
   <title>my_experiment | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="article">
+  <meta name="description" content="山东大学计算机科学与技术学院云计算技术课程实验报告  实验基本内容利用云平台搭建个人博客，熟悉个人博客系统的搭建。具体包括：注册Github账号，搭建Hexo环境并实现个人博客搭建。 实验步骤与内容一、注册账号，创建仓库首先准备GitHub账号，这个是托管的，可以不需要自己的服务器和域名就可以有自己的博客。注册完成后，创建一个仓库，然后就可以继续下一步了。创建仓库的时候做好用 yourname.">
+<meta property="og:type" content="article">
 <meta property="og:title" content="my_experiment">
 <meta property="og:url" content="http://example.com/2023/03/21/my-bolg/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="山东大学计算机科学与技术学院云计算技术课程实验报告  实验基本内容利用云平台搭建个人博客，熟悉个人博客系统的搭建。具体包括：注册Github账号，搭建Hexo环境并实现个人博客搭建。 实验步骤与内容一、注册账号，创建仓库首先准备GitHub账号，这个是托管的，可以不需要自己的服务器和域名就可以有自己的博客。注册完成后，创建一个仓库，然后就可以继续下一步了。创建仓库的时候做好用 yourname.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2023/03/21/my-bolg/repositories.png">
+<meta property="og:image" content="http://example.com/2023/03/21/my-bolg/git_version.png">
+<meta property="og:image" content="http://example.com/2023/03/21/my-bolg/hexo_setup.png">
+<meta property="og:image" content="http://example.com/2023/03/21/my-bolg/hexo_init.png">
+<meta property="og:image" content="http://example.com/2023/03/21/my-bolg/cateloge.png">
+<meta property="og:image" content="http://example.com/2023/03/21/my-bolg/hexo_start.png">
+<meta property="og:image" content="http://example.com/2023/03/21/my-bolg/helloworld.png">
+<meta property="og:image" content="http://example.com/2023/03/21/my-bolg/password.png">
+<meta property="og:image" content="http://example.com/2023/03/21/my-bolg/cateloge1.png">
+<meta property="og:image" content="http://example.com/2023/03/21/my-bolg/ssh.png">
+<meta property="og:image" content="http://example.com/2023/03/21/my-bolg/github.png">
+<meta property="og:image" content="http://example.com/2023/03/21/my-bolg/muni-1259.png">
 <meta property="article:published_time" content="2023-03-21T11:19:35.000Z">
-<meta property="article:modified_time" content="2023-03-21T11:35:10.529Z">
+<meta property="article:modified_time" content="2023-03-21T14:02:53.026Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2023/03/21/my-bolg/repositories.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -93,7 +108,26 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <blockquote>
+<p>山东大学计算机科学与技术学院云计算技术课程实验报告</p>
+</blockquote>
+<h2 id="实验基本内容"><a href="#实验基本内容" class="headerlink" title="实验基本内容"></a>实验基本内容</h2><p>利用云平台搭建个人博客，熟悉个人博客系统的搭建。具体包括：注册Github账号，搭建Hexo环境并实现个人博客搭建。</p>
+<h2 id="实验步骤与内容"><a href="#实验步骤与内容" class="headerlink" title="实验步骤与内容"></a>实验步骤与内容</h2><p>一、注册账号，创建仓库<br>首先准备GitHub账号，这个是托管的，可以不需要自己的服务器和域名就可以有自己的博客。注册完成后，创建一个仓库，然后就可以继续下一步了。创建仓库的时候做好用 yourname.github.io 这样便于记忆后期托管的域名。<br><img src="/2023/03/21/my-bolg/repositories.png"></p>
+<p>二、下载 Git 和 Node.js<br>去官网下载安装包，然后点击安装，选项全部默认，一路 Next ，就安装完成了。完成后测试打开cmd，输入 git -version 和 git -v 查看版本号，如果出现如下图就是安装成功。<br><img src="/2023/03/21/my-bolg/git_version.png"></p>
+<p>三、.Hexo下载<br>1、在我们想建成博客目录的盘符创建一个文件夹作为博客的顶级目录。<br>然后打开cmd，进入创建的文件夹，输入npm install hexo-cli -g 安装hexo。<br><img src="/2023/03/21/my-bolg/hexo_setup.png"></p>
+<p>2.Hexo初始化<br>安装完成后，输入hexo init blog 进行初始化。<br><img src="/2023/03/21/my-bolg/hexo_init.png"></p>
+<p>3.初始化成功后，文件夹下就会有下方形式的目录结构。<br><img src="/2023/03/21/my-bolg/cateloge.png"></p>
+<p>4.启动博客<br>cmd进入到blog目录，然后输入hexo s -g启动，博客就搭建完成了。<br><img src="/2023/03/21/my-bolg/hexo_start.png"></p>
+<p>然后就可以输入本地地址访问博客。<br><img src="/2023/03/21/my-bolg/helloworld.png"></p>
+<p>四、挂载到GitHub。<br>1、挂载：在GitHub上，为了方便，我们要创建SSH密钥，用SSH连接更为方便的推送。具体方法是ssh-keygen -C “<a href="mailto:&#120;&#120;&#120;&#120;&#120;&#120;&#x40;&#49;&#120;&#120;&#x2e;&#x63;&#x6f;&#109;">&#120;&#120;&#120;&#120;&#120;&#120;&#x40;&#49;&#120;&#120;&#x2e;&#x63;&#x6f;&#109;</a>”，这里的xxxxxx输入你自己的邮箱号，然后一直回车，就会生成密钥。在 ~&#x2F;.ssh 中 ，Windows用户在 C:&#x2F;Users&#x2F;xxx&#x2F;.ssh 下<br><img src="/2023/03/21/my-bolg/password.png"></p>
+<p>2.用记事本打开 id_rsa.pub 就是你的公钥。<br><img src="/2023/03/21/my-bolg/cateloge1.png"></p>
+<p>3.在Github的设置里添加ssh公钥。公钥就是id_rsa.pub复制出来的那一串。<br><img src="/2023/03/21/my-bolg/ssh.png"></p>
+<p>4.挂载前给hexo安装git依赖，输入npm install –save hexo-deployer-git</p>
+<p>五、开始挂载<br>1.SSH添加好以后，开始修改Hexo的配置文件。找到bolg文件夹下的_config.yml，找到最后一行的#deploymen选项，把deploy下的repo和branch配置好。</p>
+<p>2.然后就是输入hexo cl 清除缓存，代码全拼是 hexo clean。清除缓存后就推送到Gitee，输入hexo g -d</p>
+<p>3.推送成功后，最后回到github上查看自己的仓库，如果出现下图就表示上传成功。<br><img src="/2023/03/21/my-bolg/github.png"></p>
+<p>4.然后可以开启Gitee Pages 或GitHub 中的Pages。开启成功后会自动生成一个网址，这就是我们的博客网址了。我们可以使用xxx.github.io来访问你的博客了。<br><img src="/2023/03/21/my-bolg/muni-1259.png"></p>
+
       
     </div>
     <footer class="article-footer">
